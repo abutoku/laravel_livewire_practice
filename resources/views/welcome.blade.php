@@ -9,7 +9,8 @@
 </head>
 <body>
     <h1>Hello Livewire</h1>
-    <a href="{{ route('practice') }}">リンク</a>
+    <a href="{{ route('practice') }}">サンプル①</a>
+    <a href="{{ route('students') }}">サンプル②</a>
     {{-- livewireのコンポーネントを表示 --}}
     <livewire:counter>
 

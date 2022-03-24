@@ -22,11 +22,11 @@ Route::get('/practice', function () {
     return view('practice');
 })->name('practice');
 
+Route::get('/students',Students::class)->name('students');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/students',Students::class);
 
 // require __DIR__.'/auth.php';
