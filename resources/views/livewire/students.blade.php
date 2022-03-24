@@ -4,6 +4,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                    {{-- セッションにメッセージがあれば表示を出す --}}
+                    @if(session()->has('message'))
+                    <div class="alert alert-success">{{ session('message') }}</div>
+                    @endif
                     <div class="card">
                         <div class="card-header">
                             <h3>All Students
