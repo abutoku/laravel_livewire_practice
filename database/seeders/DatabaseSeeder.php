@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(ArticleSeeder::class);
         $this->call(LocalDevelopSeeder::class);
+        \App\Models\Student::factory(10)->create();
     }
 }
